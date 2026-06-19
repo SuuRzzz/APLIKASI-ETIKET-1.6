@@ -1,0 +1,40 @@
+name: etiket_apotek
+description: Aplikasi Cetak Etiket Obat - Apotek Bima
+publish_to: 'none'
+version: 1.5.0+5
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Bluetooth Thermal Printer - sama persis seperti Nota Blonjo
+  print_bluetooth_thermal: ^1.0.10
+  esc_pos_utils_lts: any
+
+  # Storage
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+
+  # Image picker (logo apotek)
+  image_picker: ^1.0.7
+  image: ^4.1.7
+
+  # Permissions
+  permission_handler: ^11.3.0
+
+  # UI
+  cupertino_icons: ^1.0.6
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
